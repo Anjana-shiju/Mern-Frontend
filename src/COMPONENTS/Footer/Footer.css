@@ -1,0 +1,92 @@
+.bottom-hero {
+  background:
+    
+  linear-gradient(to top, rgba(255,255,255,0.5) 40%, rgba(255,255,255,0.2) 80%, rgba(255,255,255,0) 100%),
+  url('../PIMAGES/foot1.jpg') center bottom / cover no-repeat;
+
+  padding: 160px 20px 260px;
+  text-align: center;
+}
+.hero-content h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.8rem;
+  color: #222;
+  margin-bottom: 1rem;
+}
+.underline {
+  width: 100px;
+  height: 5px;
+  background-color: #f99d1c;
+  margin: 0 auto 1.5rem;
+  border-radius: 5px;
+}
+.hero-content p {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  color: #555;
+}
+.btn {
+  background-color: #f99d1c;
+  color: white;
+  padding: 14px 36px;
+  border-radius: 6px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  transition: 0.3s;
+}
+.btn:hover { background-color: #e8880a; }
+
+
+footer {
+  background: #0b0b0b;
+  color: #ddd;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+footer a { color: #ddd; }
+footer a:hover { color: var(--primary); }
+
+
+@media (max-width: 768px) {
+  .hero-img { height: 65vh; }
+  section { padding: 70px 0; }
+  .hero-content h1 { font-size: 2rem; }
+  .hero-content p { font-size: 0.95rem; }
+}
+footer {
+  background: #000;
+  color: #ddd;
+  font-size: 15px;
+}
+footer h5 {
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+.footer-link {
+  display: inline-block;
+  color: #bbb;
+  text-decoration: none;
+  margin-bottom: 10px;
+  transition: color 0.3s;
+}
+.footer-link:hover {
+  color: #f99d1c;
+}
+footer i:hover {
+  color: #f99d1c;
+  transition: 0.3s;
+}
+form input::placeholder {
+  color: #888;
+  font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+ 

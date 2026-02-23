@@ -1,0 +1,190 @@
+:root {
+  --primary:  #f99d1c;
+  --muted: #6c757d;
+  --bg: #f7f7f7;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Inter", system-ui, sans-serif;
+  color: #222;
+  background: #fff;
+  line-height: 1.7;
+}
+
+
+
+
+
+.navbar { padding: 0.8rem 0; }
+.navbar .nav-link { color: #333 !important; margin: 0 6px; }
+.navbar .nav-link:hover, .nav-link.active { color: var(--primary) !important; }
+
+
+.bg {
+  background-image: url('../PIMAGES/aboutback.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: black;
+}
+
+
+
+  .tour-header {
+    background-color: #fff;
+  }
+
+  .tour-header h1 {
+    font-family: 'Georgia', serif;
+    color:black
+  }
+
+  .tour-header p {
+    color:black;
+  }
+
+  .text-primary {
+    color: rebeccapurple !important;
+  }
+   
+
+                                             /* Card  */
+
+
+
+    .tour-card {
+      border-radius: 12px;
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .tour-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    .tour-card img {
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .btn-tour {
+      background-color: #ff9900;
+      color: #fff;
+      font-weight: 600;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .btn-tour:hover {
+      background-color: #fff;
+      color: #ff9900;
+      border: 1px solid #ff9900;
+    }
+    .load-more-btn {
+    background-color: #ff9900;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 12px 50px;
+    transition: all 0.3s ease;
+  }
+
+  .load-more-btn:hover {
+    background-color: white;
+    color: #ff9900;
+    border: 2px solid #ff9900;
+  }
+
+                                          /* Last */
+                                  
+  .hero-section {
+  background: linear-gradient(to bottom, #f4f7fb 70%, transparent), 
+              url('../PIMAGES/backkkkk.avif'); bottom: center/cover no-repeat;
+  padding: 180px 20px 250px;
+}
+
+.hero-title {
+  font-size: 3.2rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.hero-line {
+  width: 80px;
+  height: 4px;
+  background-color: #ff9900;
+  border-radius: 2px;
+}
+
+.hero-sub {
+  max-width: 800px;
+  color: #555;
+}
+
+.hero-btn {
+  background-color: #ff9900;
+  color: #fff;
+  padding: 14px 40px;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: white;
+  color: #ff9900;
+  border: 2px solid #ff9900;
+}
+
+
+                                    /* Footer */
+footer {
+  background: #0b0b0b;
+  color: #ddd;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+footer a { color: #ddd; }
+footer a:hover { color: var(--primary); }
+
+
+@media (max-width: 768px) {
+  .hero-img { height: 65vh; }
+  section { padding: 70px 0; }
+  .hero-content h1 { font-size: 2rem; }
+  .hero-content p { font-size: 0.95rem; }
+}
+footer {
+  background: #000;
+  color: #ddd;
+  font-size: 15px;
+}
+footer h5 {
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+.footer-link {
+  display: inline-block;
+  color: #bbb;
+  text-decoration: none;
+  margin-bottom: 10px;
+  transition: color 0.3s;
+}
+.footer-link:hover {
+  color: #f99d1c;
+}
+footer i:hover {
+  color: #f99d1c;
+  transition: 0.3s;
+}
+form input::placeholder {
+  color: #888;
+  font-size: 14px;
+}
+
+

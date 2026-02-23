@@ -1,0 +1,136 @@
+:root {
+  --primary:  #f99d1c;
+  --muted: #6c757d;
+  --bg: #f7f7f7;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Inter", system-ui, sans-serif;
+  color: #222;
+  background: #fff;
+  line-height: 1.7;
+}
+
+
+.navbar { padding: 0.8rem 0; }
+.navbar .nav-link { color: #333 !important; margin: 0 6px; }
+.navbar .nav-link:hover, .nav-link.active { color: var(--primary) !important; }
+
+
+
+.bg {
+  background-image: url('../PIMAGES/actbg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color:black;
+}
+
+
+.tour-list {
+  background-color: #f7fbff;
+  padding: 60px 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.tour-item {
+  display: flex;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tour-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.tour-item img {
+  width: 40%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.tour-text {
+  padding: 30px;
+  flex: 1;
+}
+
+.tour-location {
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: #777;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.tour-text h3 {
+  font-size: 24px;
+  color: #222;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.tour-text p {
+  color: #555;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+
+@media (max-width: 768px) {
+  .tour-item {
+    flex-direction: column;
+  }
+  .tour-item img {
+    width: 100%;
+    height: 220px;
+  }
+}
+ .hero-section {
+  background: linear-gradient(to bottom, #f4f7fb 70%, transparent), 
+              url('../PIMAGES/bbbbbb.jpg') bottom center/cover no-repeat;
+  padding: 180px 20px 250px;
+}
+
+.hero-title {
+  font-size: 3.2rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.hero-line {
+  width: 80px;
+  height: 4px;
+  background-color: #ff9900;
+  border-radius: 2px;
+}
+
+.hero-sub {
+  max-width: 800px;
+  color: #555;
+}
+
+.hero-btn {
+  background-color: #ff9900;
+  color: #fff;
+  padding: 14px 40px;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: white;
+  color: #ff9900;
+  border: 2px solid #ff9900;
+}

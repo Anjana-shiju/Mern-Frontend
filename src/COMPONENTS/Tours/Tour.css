@@ -1,0 +1,13 @@
+.tour-card {
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+.tour-card:hover {
+  transform: translateY(-6px);
+}
+.tour-img {
+  height: 230px;
+  object-fit: cover;
+  width: 100%;
+}

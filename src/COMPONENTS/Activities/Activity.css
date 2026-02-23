@@ -1,0 +1,16 @@
+#activities {
+  background: #fff;
+}
+.activity-card {
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+.activity-card:hover {
+  transform: translateY(-5px);
+}
+.activity-card img {
+  height: 160px;
+  width: 100%;
+  object-fit: cover;
+}
