@@ -8,20 +8,33 @@ export default function Book() {
 
   const [packages, setPackages] = useState([]);
 
+  // ❗ initial state il selectedPackage use cheyyaruthu
   const [formData, setFormData] = useState({
     customerName: "",
     email: "",
     phone: "",
-    packageId: selectedPackage?._id || "",
+    packageId: "",
     people: "",
     travelDate: "",
   });
 
+  // packages fetch
   useEffect(() => {
-    axios.get("https://merstack-backend.onrender.com/api/packages")
-      .then(res => setPackages(res.data))
-      .catch(err => console.log(err));
+    axios
+      .get("https://merstack-backend.onrender.com/api/packages")
+      .then((res) => setPackages(res.data))
+      .catch((err) => console.log(err));
   }, []);
+
+  // 🔥 selectedPackage varumbo packageId set cheyyan
+  useEffect(() => {
+    if (selectedPackage?._id) {
+      setFormData((prev) => ({
+        ...prev,
+        packageId: selectedPackage._id,
+      }));
+    }
+  }, [selectedPackage]);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -31,10 +44,13 @@ export default function Book() {
     e.preventDefault();
 
     try {
-      await axios.post("https://merstack-backend.onrender.com/api/bookings", formData);
-      alert("Booking placed successfully  Waiting for confirmation");
+      await axios.post(
+        "https://merstack-backend.onrender.com/api/bookings",
+        formData
+      );
+      alert("Booking placed successfully. Waiting for confirmation");
     } catch (err) {
-      alert("Booking failed ");
+      alert("Booking failed");
     }
   };
 
@@ -45,7 +61,6 @@ export default function Book() {
           <h5 className="text-center mb-3">Travel Booking</h5>
 
           <form onSubmit={handleSubmit}>
-
             <input
               className="form-control mb-2"
               name="customerName"
@@ -79,7 +94,7 @@ export default function Book() {
               required
             >
               <option value="">Select Package</option>
-              {packages.map(pkg => (
+              {packages.map((pkg) => (
                 <option key={pkg._id} value={pkg._id}>
                   {pkg.title}
                 </option>
@@ -103,10 +118,7 @@ export default function Book() {
               required
             />
 
-            <button className="btn btn-primary w-100">
-              Book
-            </button>
-
+            <button className="btn btn-primary w-100">Book</button>
           </form>
         </div>
       </div>
