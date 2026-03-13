@@ -89,7 +89,7 @@ export default function TourPage() {
               <div className="card tour-card h-100">
 
                 <img
-                  src={`https://merstack-backend.onrender.com/${pkg.image}`}
+                  src={`https://merstack-backend.onrender.com${pkg.image}`}
                   className="card-img-top"
                   alt={pkg.title}
                 />

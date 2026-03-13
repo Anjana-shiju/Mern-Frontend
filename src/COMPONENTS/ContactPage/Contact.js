@@ -17,7 +17,7 @@ export default function Contact() {
   const sendMessage = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("https://merstack-backend.onrender.com/contact", form);
+      await axios.post("https://merstack-backend.onrender.com/api/contact", form);
       alert("Message sent successfully ");
       setForm({ name: "", email: "", subject: "", message: "" });
     } catch (err) {
@@ -40,11 +40,11 @@ export default function Contact() {
         </div>
       </section>
 
-      {/* Contact Section */}
+     
       <section className="contact-section container py-5">
         <div className="row g-5">
 
-          {/* Left Contact Info */}
+        
           <div className="col-lg-5 col-md-6">
             <h4 className="fw-bold mb-4" style={{ color: "rebeccapurple" }}>
               Contact Information

@@ -1,6 +1,6 @@
 import React from 'react';
 import './Footer.css';
-
+import { Link } from "react-router-dom";
 export default function Footer() {
   return (
     <div>
@@ -46,6 +46,14 @@ export default function Footer() {
                 <li><a href="#" className="footer-link text-white text-decoration-none">Privacy Policy</a></li>
                 <li><a href="#" className="footer-link text-white text-decoration-none">Terms & Conditions</a></li>
                 <li><a href="#" className="footer-link text-white text-decoration-none">Cancellation Policy</a></li>
+               <li>
+  <Link 
+    to="/admin/login" 
+    className="footer-link text-white text-decoration-none"
+  >
+    Admin
+  </Link>
+</li>
               </ul>
             </div>
 

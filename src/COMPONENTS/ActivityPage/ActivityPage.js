@@ -37,7 +37,7 @@ export default function ActivityPage() {
         {activities.map((act) => (
           <div className="tour-item" key={act._id}>
             <img
-              src={`https://merstack-backend.onrender.com/${act.image}`}
+              src={`https://merstack-backend.onrender.com${act.image}`}
               alt={act.name}
             />
             <div className="tour-text">

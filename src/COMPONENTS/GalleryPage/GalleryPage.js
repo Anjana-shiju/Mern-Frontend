@@ -38,7 +38,7 @@ export default function GalleryPage() {
             <div className="col-lg-4 col-md-6 col-sm-12" key={item._id}>
               <div className="gallery-item">
                 <img
-                  src={`https://merstack-backend.onrender.com/${item.image}`}
+                  src={`https://merstack-backend.onrender.com${item.image}`}
                   alt={item.title}
                   className="img-fluid"
                 />
