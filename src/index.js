@@ -4,13 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-import HomePage from './PAGES/HomePage';
 
-import About from './PAGES/About';
-import Tourr from './PAGES/Tourr';
-import Activityy from './PAGES/Activityy';
-import Galleryyyy from './PAGES/Galleryyyy';
-import Contacttt from './PAGES/Contacttt';
 
 
 
